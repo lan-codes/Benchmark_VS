@@ -10,7 +10,6 @@ import rdkit.ML.Scoring.Scoring
 from rdkit import RDLogger
 from multiprocessing import Pool
 from functools import partial
-import requests
 import prolif as plf    # for plf.ResidueId.from_string()
 import matplotlib.pyplot as plt
 from matplotlib.patches import Patch
@@ -262,30 +261,6 @@ def get_id_score_label(input_file: str, docking_software: str, scoring_function:
 
 
 ##### POSE ANALYSIS #####
-def read_ligand_expo(file_name: str) -> dict:
-    """
-    Read Ligand Expo data, try to find a file called
-    Components-smiles-stereo-oe.smi in the current directory.
-    If you can't find the file, grab it from the RCSB
-    :return: Ligand Expo as a dictionary with ligand id as the key
-    """
-    #file_name = "Components-smiles-stereo-oe.smi"
-    try:
-        df = pd.read_csv(file_name, sep="\t",
-                         header=None,
-                         names=["SMILES", "ID", "Name"])
-    except FileNotFoundError:
-        url = f"http://ligand-expo.rcsb.org/dictionaries/{file_name}"
-        print(url)
-        r = requests.get(url, allow_redirects=True)
-        open('Components-smiles-stereo-oe.smi', 'wb').write(r.content)
-        df = pd.read_csv(file_name, sep="\t",
-                         header=None,
-                         names=["SMILES", "ID", "Name"])
-    df.set_index("ID", inplace=True)
-    return df.to_dict()
-
-
 def get_docked_id_mol(mol_dir, target):
     for docking in ["vina", "diffdock_l"]:
         for scoring in ["vina", "gnina"]:
