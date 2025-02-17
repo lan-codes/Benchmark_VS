@@ -2,8 +2,5 @@
 __pycache__/
 
 # data folder
-data/dudez/
-data/docking_poses/
-data/plif/
-data/posebusters/
-data/analysis
+!data/
+data/*
