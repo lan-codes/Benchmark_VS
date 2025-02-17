@@ -1,2 +1,42 @@
 # Benchmark_VS
-Benchmark study of deep learning-based docking for virtual screening.
+This repository contains the code and notebook to reproduce the analyses presented in the paper [*"Integrating Machine Learning-Based Pose Sampling with Established Scoring Functions for Virtual Screening"*]()
+
+## Structure
+### Code
+
+The `utils/analysis_utils.py` contains the code to:
+- Calculate the virtual screening (VS) performance
+- Extract best poses of each VS setup from docking pose files
+- Generate PoseBusters check reports for the docking poses
+- Calculate protein-ligand interaction fingerprint (PLIF) similarity between docked and reference molecules
+- Calculate Morgan 2-based Tanimoto similarity between docked and reference molecules
+
+### Data
+
+The data used for the analysis experiments include:
+
+- **dudez**: input molecules as SMILES strings provided in DUDE-Z for each target.
+- **docking_poses**: docking poses by DiffDock-L and AutoDock Vina for 43 DUDE-Z targets.
+- **plif**: the generated protein-ligand interaction fingerprints generated for docked compounds and reference ligands for each target.
+- **posebusters**: the PoseBusters check results for all docking poses for each target.
+
+All the above data can be downloaded from [zenodo]() and placed in `data` such that you have the path `data/docking_poses`, `data/dudez`, `data/plif`, and `data/posebusters`.
+
+## Setup Environment
+
+Install python 3.10 in the virtual environment of choice and install the required packages noted in `requirements.txt`.
+
+## Running the analysis experiments
+
+Run the notebook `notebooks/benchmark_vs.ipynb` to reproduce all the results presented in the paper.
+
+The output files and figures will be placed in `data/analysis` by default. This can be customized if needed.
+
+## Citing us
+
+
+
+
+
+
+
