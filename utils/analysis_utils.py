@@ -500,8 +500,8 @@ def get_pb_valid(target: str, docking: str, paths: dict):
 
 
 def plot_pb_valid_plif_sim(sim: pd.DataFrame, target: str, outfile: str=None):
-    color_code = {"Vina": "tab:blue", "DiffDock-L": "tab:orange"}
-    plot_order = ["Vina", "DiffDock-L"]
+    color_code = {"DiffDock-L": "tab:orange", "Vina": "tab:blue"}
+    plot_order = ["DiffDock-L", "Vina"]
     fig, ax = plt.subplots()
     stat_target = list()
     plif_100 = pd.DataFrame()   
