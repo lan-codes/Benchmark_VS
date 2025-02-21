@@ -13,12 +13,11 @@ The `utils/analysis_utils.py` contains the code to:
 
 ### Data
 
-The data used for the analysis experiments include:
-
+The input data used for the analysis experiments include:
 - **dudez**: input molecules as SMILES strings provided in DUDE-Z for each target.
-- **docking_poses**: docking poses by DiffDock-L and AutoDock Vina for 43 DUDE-Z targets.
-- **plif**: the generated protein-ligand interaction fingerprints generated for docked compounds and reference ligands for each target.
-- **posebusters**: the PoseBusters check results for all docking poses for each target.
+- **docking_poses**: docking poses with DiffDock-L and AutoDock Vina for 43 DUDE-Z targets.
+- **plif**: the reference ligands collected with SIENA and the protein-ligand interaction fingerprints generated with ProLIF for docked compounds and reference ligands for each target.
+- **posebusters**: the pose validity check results generated with PoseBusters for all docking poses for each target.
 
 All the above data can be downloaded from [zenodo](https://zenodo.org/records/14905986). After the data is placed in `data` such that you have the paths: `data/docking_poses`, `data/dudez`, `data/plif`, and `data/posebusters`, you can now run the analysis notebook in `notebooks/` folder.
 
