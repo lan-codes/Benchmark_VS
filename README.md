@@ -20,7 +20,7 @@ The data used for the analysis experiments include:
 - **plif**: the generated protein-ligand interaction fingerprints generated for docked compounds and reference ligands for each target.
 - **posebusters**: the PoseBusters check results for all docking poses for each target.
 
-All the above data can be downloaded from [zenodo]() and placed in `data` such that you have the paths: `data/docking_poses`, `data/dudez`, `data/plif`, and `data/posebusters`.
+All the above data can be downloaded from [zenodo](https://zenodo.org/records/14905986). After the data is placed in `data` such that you have the paths: `data/docking_poses`, `data/dudez`, `data/plif`, and `data/posebusters`, you can run the analysis notebook in `notebooks/` folder.
 
 ## Setup Environment
 
