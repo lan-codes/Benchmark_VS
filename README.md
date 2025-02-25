@@ -1,5 +1,5 @@
 # Benchmark_VS
-This repository contains the code and notebook to reproduce the analyses presented in the paper [*"Integrating Machine Learning-Based Pose Sampling with Established Scoring Functions for Virtual Screening"*]()
+This repository contains the code and notebook to reproduce the analyses presented in the paper *"Integrating Machine Learning-Based Pose Sampling with Established Scoring Functions for Virtual Screening"* [![DOI:10.26434/chemrxiv-2025-96kzg-v2](http://img.shields.io/badge/DOI-10.26434/chemrxiv-2025-96kzg-v2-B31B1B.svg)](https://doi.org/10.26434/chemrxiv-2025-96kzg-v2)
 
 ## Structure
 ### Code
@@ -32,7 +32,14 @@ Run the notebook `notebooks/benchmark_vs.ipynb` to reproduce all the results pre
 The output files and figures will be placed in `data/analysis` by default. This can be customized if needed.
 
 ## Citing us
-
+```
+@misc{vu2025integrating,
+  title={Integrating Machine Learning-Based Pose Sampling with Established Scoring Functions for Virtual Screening},
+  author={Vu, Thi Ngoc Lan and Fooladi, Hosein and Kirchmair, Johannes},
+  year={2025}
+  url={https://doi.org/10.26434/chemrxiv-2025-96kzg-v2}
+}
+```
 
 
 
