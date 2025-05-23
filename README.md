@@ -1,5 +1,5 @@
 # Benchmark_VS
-This repository contains the code and notebook to reproduce the analyses presented in the paper [*"Integrating Machine Learning-Based Pose Sampling with Established Scoring Functions for Virtual Screening"*](https://doi.org/10.26434/chemrxiv-2025-96kzg-v2) [DOI: 10.26434/chemrxiv-2025-96kzg-v2]
+This repository contains the code and notebook to reproduce the analyses presented in the paper [*"Integrating Machine Learning-Based Pose Sampling with Established Scoring Functions for Virtual Screening"*]([https://doi.org/10.26434/chemrxiv-2025-96kzg-v2](https://pubs.acs.org/doi/10.1021/acs.jcim.5c00380)) [DOI: 10.1021/acs.jcim.5c00380]
 
 ## Structure
 ### Code
@@ -33,11 +33,15 @@ The output files and figures will be placed in `data/analysis` by default. This 
 
 ## Citing us
 ```
-@misc{vu2025integrating,
+@article{vu2025integrating,
   title={Integrating Machine Learning-Based Pose Sampling with Established Scoring Functions for Virtual Screening},
   author={Vu, Thi Ngoc Lan and Fooladi, Hosein and Kirchmair, Johannes},
-  year={2025}
-  url={https://doi.org/10.26434/chemrxiv-2025-96kzg-v2}
+  journal={Journal of Chemical Information and Modeling},
+  volume={XXXX},
+  number={XXX},
+  pages={XXX-XXX},
+  year={2025},
+  publisher={ACS Publications}
 }
 ```
 
