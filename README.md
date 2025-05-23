@@ -1,5 +1,5 @@
 # Benchmark_VS
-This repository contains the code and notebook to reproduce the analyses presented in the paper [*"Integrating Machine Learning-Based Pose Sampling with Established Scoring Functions for Virtual Screening"*]([https://pubs.acs.org/doi/10.1021/acs.jcim.5c00380]) [DOI: 10.1021/acs.jcim.5c00380]
+This repository contains the code and notebook to reproduce the analyses presented in the paper [*"Integrating Machine Learning-Based Pose Sampling with Established Scoring Functions for Virtual Screening"*](https://pubs.acs.org/doi/10.1021/acs.jcim.5c00380) [DOI: 10.1021/acs.jcim.5c00380]
 
 ## Structure
 ### Code
