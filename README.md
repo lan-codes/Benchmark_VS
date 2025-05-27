@@ -38,9 +38,9 @@ The output files and figures will be placed in `data/analysis` by default. This 
   title={Integrating Machine Learning-Based Pose Sampling with Established Scoring Functions for Virtual Screening},
   author={Vu, Thi Ngoc Lan and Fooladi, Hosein and Kirchmair, Johannes},
   journal={Journal of Chemical Information and Modeling},
-  volume={XXXX},
-  number={XXX},
-  pages={XXX-XXX},
+  volume={65},
+  number={10},
+  pages={4833–4843},
   year={2025},
   publisher={ACS Publications}
 }
